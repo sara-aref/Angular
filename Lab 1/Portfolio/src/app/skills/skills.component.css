@@ -1,0 +1,30 @@
+section {
+  background-color: rgb(83, 81, 81);
+  color: white;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.head {
+  text-align: center;
+}
+
+.main {
+  margin-right: 200px;
+  margin-left: 200px;
+  display: grid;
+}
+
+.progress {
+  margin-bottom: 15px;
+
+}
