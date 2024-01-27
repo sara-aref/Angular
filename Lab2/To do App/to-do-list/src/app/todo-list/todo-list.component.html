@@ -1,0 +1,5 @@
+<div class="container">
+  <button (click)="deleteItem(listItem)">Delete</button>
+  <button (click)="toggleChecked(listItem)">{{ listItem.checked ? 'Undo' : 'Check' }}</button>
+  <p [style.textDecoration]="listItem.checked ? 'line-through' : 'none'">{{listItem.name}}</p>
+</div>

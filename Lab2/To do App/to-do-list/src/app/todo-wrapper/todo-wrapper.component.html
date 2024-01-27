@@ -1,0 +1,6 @@
+<app-todo-form (sendItem)="receiveItem($event)"></app-todo-form>
+
+@for(item of todoItems; track item)
+{
+  <app-todo-list [listItem]="item" (sendToParent)="receiveFromChild($event)"></app-todo-list>
+}

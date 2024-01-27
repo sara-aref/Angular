@@ -1,0 +1,27 @@
+<h1>Users</h1>
+
+<div class="input-group my-5">
+  <input type="text" class="form-control" placeholder="Search by Email" aria-label="Username" aria-describedby="basic-addon1">
+  <button type="button" class="btn btn-primary">Primary</button>
+</div>
+
+  <div class="row">
+    <div class="card-list">
+      @for (user of users; track users.id)
+      {
+        <div class="col-md-4 my-3">
+          <div class="card" style="width: 18rem;">
+            <img [src]="user.image" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <div class="text-center mb-2">
+                <p class="card-text">Name: {{user.username}}</p>
+                <fa-icon [icon]="starIcon" [ngStyle]="{color : user.is_verified ? 'green' : 'red'}"></fa-icon>
+              </div>
+              <p class="card-text">Email: {{user.email}}</p>
+              <p class="card-text">Phone: {{user.phone}}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>

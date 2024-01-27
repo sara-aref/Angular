@@ -1,0 +1,8 @@
+<section>
+  <h1>To-Do App!</h1>
+  <p>Add New To-Do</p>
+  <div class="container">
+    <input type="text" #taskInput placeholder="Enter new task">
+    <button (click)="addItem(taskInput.value)">Add</button>
+  </div>
+</section>
