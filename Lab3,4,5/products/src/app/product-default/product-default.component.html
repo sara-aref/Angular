@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="card-list">
+    @for (product of products; track product.id) {
+      <div class="card" style="width: 18rem;">
+        <div class="container">
+          <img class="card-img-top" [src]="product.images[0]" alt="Card image cap">
+          @if(product.stock > 0)
+          {
+            <div class="top-left" [ngStyle]="{'backgroundColor' : 'rgb(3, 68, 3)'}">In stock</div>
+          }
+          @else
+          {
+            <div class="top-left" [ngStyle]="{'backgroundColor' : 'rgb(138, 16, 16)'}">Out of stock</div>
+          }
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" (click)="redirectToDetails(product.id)">{{ product.title }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <button class="btn" (click)="addToCart()">Add to cart</button>
+          <h5 class="price">{{ product.price | currency }}</h5>
+        </div>
+      </div>
+    }
+  </div>
+</div>
