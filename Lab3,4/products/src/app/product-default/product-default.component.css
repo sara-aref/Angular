@@ -1,0 +1,51 @@
+h5 {
+  color: rgb(3, 68, 3);
+}
+
+.container {
+  position: relative;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: white;
+  padding: 2px 15px;
+  border-radius: 15px;
+
+}
+
+.price {
+  display: inline;
+  float: right;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-evenly;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: 1px solid rgb(3, 68, 3);
+  border-radius: 50px;
+  color: rgb(3, 68, 3);
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgb(3, 68, 3);
+}
+
+.card-title:hover {
+  cursor: pointer;
+}
+
+.card-img-top {
+  height: 300px;
+}

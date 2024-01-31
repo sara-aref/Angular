@@ -1,0 +1,23 @@
+.active {
+  color: red !important;
+  font-weight: bold;
+}
+
+.cart {
+  color: black;
+}
+
+.count {
+  text-decoration: none;
+  margin-left: 5px;
+  position: relative;
+  bottom: 4px;
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
